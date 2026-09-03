@@ -1,0 +1,7 @@
+1. The source code files that generate errors are line 22 of ex1.cpp and line 24 of main.cpp.
+
+2. The cause of the segmentation fault in ex1.cpp is that g.num_cars was used instead of i in the for loop, causing an overflow at the last index. The cause of the segmentation fault in main.cpp is that the way car_arr is initialized is incorrect. You need to change it to access the Car struct instead of Car* car_arr. Therefore, you need to change it to g.car_arr. I checked the output/message of GDB and used the command backtrace to find the way to change these errors.
+
+3. I changed the segmentation fault from populate_car(g.car_arr[g.num_cars], fin); to populate_car([i], fin); to remove the overflow. Also, in the main.cpp file, I changed Car* car_arr to g.car_arr to initialize car_arr normally.
+
+4. No separate commands were used. If the information in file.txt was saved normally, you can check it in the output.

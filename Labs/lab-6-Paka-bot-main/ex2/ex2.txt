@@ -1,0 +1,3 @@
+1. Before entering the run command in gdb, I set a breakpoint in the main function. Then, I used step to execute the program line by line and found the error. The logical error in this program was the condition of the do while statement. Our condition was to terminate when the user input 3 or when the store's stock was sold out. Therefore, the condition for the do while statement to continue to repeat should be option != 3 && !s.out_of_stock().
+
+2. The condition of the do while loop was changed from option == 3 || s.out_of_stock() to option != 3 && !s.out_of_stock().

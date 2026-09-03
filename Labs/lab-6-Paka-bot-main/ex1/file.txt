@@ -1,0 +1,5 @@
+4
+Ferrari 2
+Toyota 7
+Mercedes 5
+Ford 5
