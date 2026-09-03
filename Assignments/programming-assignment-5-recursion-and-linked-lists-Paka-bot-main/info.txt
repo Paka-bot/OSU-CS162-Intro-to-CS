@@ -1,0 +1,31 @@
+1. Yunseong Cho / 934-546-776
+
+2. There is no change in the makefile for both recursion and linked_list. 
+Just enter the command 'make;' in the terminal at the file location, and 
+then enter the command 'test_program'.
+
+3. There are no limitations on either program.
+
+4. No extra credit work.
+
+5. Algorithm used for sort_ascending()
+- The sort_ascending() function internally calls merge_sort_ascending() to sort the list in ascending order.
+
+- merge_sort_ascending() uses the recursive merge_sort algorithm.
+
+- The list is split into two sublists using slow/fast pointers, and 
+then merge_sort_ascending() is called recursively for each sublist to sort it. 
+After that, the two sorted sublists are merged into one sorted list using the merge() function.
+
+Algorithm used for sort_descending()
+- The sort_descending() function internally calls merge_sort_descending() to sort the list in descending order.
+
+- merge_sort_descending() uses the recursive merge_sort algorithm.
+
+- The list is split into two sublists using slow/fast pointers, and then merge_sort_descending() 
+is called recursively for each sublist to sort it. After that, the two sorted sublists were 
+merged into one sorted list using the merge() function.
+
+worst case runtime complexity
+- When the length of the list is n, the process of dividing the list in half can proceed up to log(n) at most. 
+And it takes O(n) time to merge the two lists. Therefore, the total time complexity is O(n*log(n)).

@@ -1,0 +1,7 @@
+Spell Name: Blasto_Strike Effect: fireSuccess Rate: 40.6
+Spell Name: Not_Ice_Blast Effect: fireSuccess Rate: 92.744
+Spell Name: Blush Effect: fireSuccess Rate: 100
+Spell Name: Sunshine Effect: fireSuccess Rate: 73.2
+Spell Name: Music_To_Me Effect: fireSuccess Rate: 87.32
+Spell Name: Strong_Swing Effect: fireSuccess Rate: 68.7
+Spell Name: Beginning_Blast Effect: fireSuccess Rate: 97.3
