@@ -1,0 +1,33 @@
+1. Can the value of the string (sentence) be changed with the modified function prototype? If so, how?
+
+    - You can change the original string directly by passing the string parameter by reference (std::string &sentence) or by pointer (std::string *sentence).
+
+2. Compared to using reference variables, what other modifications are required when making the
+function call and inside the function?
+
+    - When calling the function, pass the address of the variable &. Inside the function, you need to use the dereference operator * to access and modify the value of the parameter.
+
+3. What is the difference between an ampersand (&) and an asterisk (*) added in front of the parameter?
+
+    - The ampersand & indicates that a parameter is passed by reference. This allows the function to operate directly on the original variable, enabling modifications without copying the value.The asterisk * indicates that a parameter is a pointer. A pointer stores the memory address of a variable. When using a pointer parameter, the function must dereference * the pointer to access or modify the value at that memory address.
+
+
+● What is the dimension and size of your array? 
+
+    - The dimension of the array I will use is a one-dimensional (1D) array. The size of the array is 27, which is 20 regular balls, 5 money balls, and 2 star balls.
+
+● How do you plan to display the result of each rack using “_”, “X”, “M”, and “S”? 
+
+    - "_" indicates a missed shot, "X" indicates a regular ball that scores a goal, "M" indicates a money ball that scores a goal, and "S" indicates a starry ball that scores a goal.
+
+● Could you reuse the array to store the shooting results of the other player? 
+
+    - It is possible. Because this game is designed so that the second player shoots after the first player has finished shooting, after the first player has finished shooting, you can store the values ​​in shot_outcomes in player1_array, then initialize shot_outcomes, and then store player2's shot results in shot_outcomes again.
+
+● What are the steps to calculate the total score for one player?
+
+    - First, initialize the variable to store the total score to 0. Then, input the result values ​​containing the shot results of each rack into the variable to store the total score. Then, add all the values ​​using a for loop.
+
+● Do you need a separate array to store the total scores for all players? As you work on assignment 1, if any of your functions are more than 15 lines of code, think about what can you do to make it smaller 
+
+    - You could create a separate array to store the total scores of all players, but this is inefficient. A simpler and easier way would be to declare a variable and store the sum of the total scores of player 1 and player 2.
